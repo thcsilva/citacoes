@@ -10,4 +10,8 @@ cd ~/pasta - entra na pasta
 
 git init - torna a pasta um repositorio git
 
+git add arquivo - faz o arquivo ser rastreado pelo git
+
+git commit -m "Arquivo inicial de citacoes - Commita a alteração do arquivo rastreado.
+
 
