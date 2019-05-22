@@ -14,4 +14,6 @@ git add arquivo - faz o arquivo ser rastreado pelo git
 
 git commit -m "Arquivo inicial de citacoes - Commita a alteração do arquivo rastreado.
 
+falta muita coisa
+
 
