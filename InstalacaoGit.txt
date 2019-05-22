@@ -14,4 +14,77 @@ git add arquivo - faz o arquivo ser rastreado pelo git
 
 git commit -m "Arquivo inicial de citacoes - Commita a alteração do arquivo rastreado.
 
+git status - retorna o status das alterações.
 
+git log - retorna o log de alterações.
+
+git remote add origin https://github.com/thcsilva/citacoes.git - linka o repositorio local com o github
+
+git clone https://github.com/thcsilva/citacoes.git - clona um repositorio existente para o computador
+
+git add . - faz o repositorio rastrear todos arquivos
+
+arquivo .gitignore - esse arquivo é criado para indicar quais arquivos e ou pastas não vão ser rastreados pelo repositorio.
+
+git commit -a -m "Descrição da alteração" - esse comando é uma junção do add + commit, não usar quando existir arquivos novos.
+
+git log -n 2 - listar apenas os ultimos 2 commits
+
+git log --oneline - lista um resumo dos commits
+
+git log --stat - resumo dos arquivos alterados, qtd linhas add e removidas
+
+git diff - mostra diferenças entre a versão alterada e a original commitada
+
+git diff --staged - mostra diferença entre um arquivo ja rastreado e o original
+
+git diff 222cccc..8877887 - comparar 2 commits pelos codigos dos mesmos
+
+git rm arquivo - remove arquivo e adiciona no rastreio.
+
+git mv arquivo arquivo2 - altera o nome de um arquivo
+
+git mv arquivo pasta/arquivo - altera a pasta do arquivo
+
+git checkout -- arquivo - desfaz as alterações ainda não rastreadas ou recuperar arquivos deletados.
+
+git reset -- index.html - tira o arquivo dos rastreados.
+
+git reset --hard - retira todos arquivos dos rastreados e desfaz todas alteraçoes não commitadas.
+
+git revert --no-edit 611111 - reverte as alteracoes de um commit pelo seu codigo
+
+git remote -v - lista os repositorios remotos e suas urls
+
+git remote rename servidor outronome - altera o nome de um servidor remoto
+
+git remote set-url - altera a url do servidor
+
+git push servidor master - para enviar os commits para o servidor remoto na branch master
+
+git clone servidor - para clonar um repositorio do servidor para a maquina local
+
+git pull servidor master - para puxar os arquivos do servidor
+
+• Local: git clone file://url
+• SSH: git clone root@url
+• Git: git clone git://url
+• HTTP/HTTPS: git clone http://url
+
+git branch teste - criar uma branch teste
+
+git branch - lista as branchs criadas
+
+git checkout teste - coloca a branch teste como ativa
+
+git checkout -b teste - cria uma branch e ja muda ela para ativa
+
+git branch -d teste - remove uma branch
+
+git branch --no-merged - retorna as branchs não mergeadas
+
+git merge teste -m "Mensagem" - da um merge da branch teste na master
+
+git merge teste --no-ff -m "Mensagem" - da um merge e força um commit
+
+git rebase teste - outra forma de dar merge entre branchs
